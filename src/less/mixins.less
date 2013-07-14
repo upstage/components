@@ -1,0 +1,76 @@
+
+
+// Webkit-style focus
+.tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+.transition-delay(@transition-delay) {
+  -webkit-transition-delay: @transition-delay;
+     -moz-transition-delay: @transition-delay;
+       -o-transition-delay: @transition-delay;
+          transition-delay: @transition-delay;
+}
+.transition-duration(@transition-duration) {
+  -webkit-transition-duration: @transition-duration;
+     -moz-transition-duration: @transition-duration;
+       -o-transition-duration: @transition-duration;
+          transition-duration: @transition-duration;
+}
+.user-select(@select) {
+  -webkit-user-select: @select;
+     -moz-user-select: @select;
+      -ms-user-select: @select;
+       -o-user-select: @select;
+          user-select: @select;
+}
+
+
+.transition-property(...) {
+  -webkit-transition-property: @arguments;
+     -moz-transition-property: @arguments;
+       -o-transition-property: @arguments;
+          transition-property: @arguments;
+}
+
+
+.transition-timing-function(@transition-timing-function) {
+  -webkit-transition-timing-function: @transition-timing-function;
+     -moz-transition-timing-function: @transition-timing-function;
+       -o-transition-timing-function: @transition-timing-function;
+          transition-timing-function: @transition-timing-function;
+}
+
+// Transitions
+.transform(@arguments) {
+  -webkit-transition: -webkit-transform @arguments;
+     -moz-transition:    -moz-transform @arguments;
+       -o-transition:      -o-transform @arguments;
+          transition:         transform @arguments;
+}

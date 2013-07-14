@@ -1,0 +1,26 @@
+---
+component: <%= pkg.name %>
+---
+{{! Navbar component
+================================================== }}
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="navbar-brand" href="{{relative this.dest "index.html"}}">UPSTAGE</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="brand-subtitle">Component</li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li> <a href="https://github.com/upstage/{{component}}/">GitHub Repo</a> </li>
+          <li> <a href="https://github.com/upstage/{{component}}/issues">Issues</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
