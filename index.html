@@ -1,79 +1,92 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+  
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Components : UI component library." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Components</title>
+    <meta charset="UTF-8">
+    <title>CSS buttons | Upstage Component</title>
+    <link rel="stylesheet" href="assets/assemble.css">
+    <link rel="stylesheet" href="assets/sections.css">
+    <link rel="stylesheet" href="assets/github.css">
+    <link rel="stylesheet" href="assets/docs.css">
   </head>
-
+  
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/upstage/components">View on GitHub</a>
-
-          <h1 id="project_title">Components</h1>
-          <h2 id="project_tagline">UI component library.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/upstage/components/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/upstage/components/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">UPSTAGE</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="brand-subtitle">Component</li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <li>
+                <a href="https://github.com/upstage//">GitHub Repo</a>
+              </li>
+              <li>
+                <a href="https://github.com/upstage//issues">Issues</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div class="masthead subhead">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-12">
+            <h1>CSS buttons</h1>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Components maintained by <a href="https://github.com/upstage">upstage</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-12">
+          <div class="panel panel-docs">
+            <h2>Small Buttons</h2>
+            <a class="btn btn-info btn-small" href="#">Small Button</a>
+            <a class="btn btn-primary btn-small" href="#">Small Button</a>
+            <a class="btn btn-jade btn-small" href="#">Small Button</a>
+            <a class="btn btn-success btn-small" href="#">Small Button</a>
+            <a class="btn btn-warning btn-small" href="#">Small Button</a>
+            <a class="btn btn-danger btn-small" href="#">Small Button</a>
+            <a class="btn btn-inverse btn-small" href="#">Small Button</a>
+            <h2>Standard Buttons</h2>
+            <a class="btn btn-info" href="#">Button</a>
+            <a class="btn btn-primary" href="#">Button</a>
+            <a class="btn btn-jade" href="#">Button</a>
+            <a class="btn btn-success" href="#">Button</a>
+            <a class="btn btn-warning" href="#">Button</a>
+            <a class="btn btn-danger" href="#">Button</a>
+            <a class="btn btn-inverse" href="#">Button</a>
+            <h2>Large Buttons</h2>
+            <a class="btn btn-info btn-large" href="#">Large Button</a>
+            <a class="btn btn-primary btn-large" href="#">Large Button</a>
+            <a class="btn btn-jade btn-large" href="#">Large Button</a>
+            <a class="btn btn-success btn-large" href="#">Large Button</a>
+            <a class="btn btn-warning btn-large" href="#">Large Button</a>
+            <a class="btn btn-danger btn-large" href="#">Large Button</a>
+            <a class="btn btn-inverse btn-large" href="#">Large Button</a>
+            <h2>Jumbo Buttons</h2>
+            <a class="btn btn-info btn-jumbo" href="#">Jumbo Button</a>
+            <a class="btn btn-primary btn-jumbo" href="#">Jumbo Button</a>
+            <a class="btn btn-jade btn-jumbo" href="#">Jumbo Button</a>
+            <a class="btn btn-success btn-jumbo" href="#">Jumbo Button</a>
+            <a class="btn btn-warning btn-jumbo" href="#">Jumbo Button</a>
+            <a class="btn btn-danger btn-jumbo" href="#">Jumbo Button</a>
+            <a class="btn btn-inverse btn-jumbo" href="#">Jumbo Button</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    
-
+    <script src="assets/highlight.js"></script>
+    <script src="assets/holder.js"></script>
   </body>
+
 </html>
