@@ -1,16 +1,16 @@
-//
-// Buttons
-// --------------------------------------------------
+/*!
+/* CSS Buttons */
+/* --------------------------------------------------------- */
 
 @import "variables.less";
 @import "mixins.less";
 
 
 
-// Button psuedo states
-// -------------------------
-// Easily pump out default styles, as well as :hover, :focus, :active,
-// and disabled options for all buttons
+/* Button psuedo states */
+/* ------------------------- */
+/* Easily pump out default styles, as well as :hover, :focus, :active, */
+/* and disabled options for all buttons */
 .btn-pseudo-states(@color, @background, @border) {
   color: @color;
   background-color: @background;
@@ -50,14 +50,14 @@
 
 
 
-// Base styles
-// --------------------------------------------------
+/* Base styles */
+/* -------------------------------------------------- */
 
-// Core styles
+/* Core styles */
 .btn {
   display: inline-block;
   padding: @padding-large-vertical (@padding-large-horizontal * 1.6);
-  margin-bottom: 0; // For input.btn
+  margin-bottom: 0; /* For input.btn */
   font-size: @font-size-base;
   font-weight: 500;
   line-height: @font-size-base;
@@ -67,7 +67,7 @@
   text-shadow: none;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid transparent; // ensure that buttons do not have a border
+  border: 1px solid transparent; /* ensure that buttons do not have a border */
   border-radius: 100px;
   white-space: nowrap;
   .transition-duration(0.1s);
@@ -95,7 +95,7 @@
   &[disabled],
   fieldset[disabled] & {
     cursor: default;
-    pointer-events: none; // Future-proof disabling of clicks
+    pointer-events: none; /* Future-proof disabling of clicks */
     .opacity(.65);
     .box-shadow(none);
   }
@@ -104,8 +104,8 @@
 
 
 
-// Alternate buttons
-// --------------------------------------------------
+/* Alternate buttons */
+/* -------------------------------------------------- */
 
 .btn-default {
   .btn-pseudo-states(@btn-default-color, @btn-default-bg, @btn-default-border);
@@ -113,38 +113,38 @@
 .btn-primary {
   .btn-pseudo-states(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
 }
-// Warning appears as orange
+/* Warning appears as orange */
 .btn-warning {
   .btn-pseudo-states(@btn-warning-color, @btn-warning-bg, @btn-warning-border);
 }
-// Danger and error appear as red
+/* Danger and error appear as red */
 .btn-danger {
   .btn-pseudo-states(@btn-danger-color, @btn-danger-bg, @btn-danger-border);
 }
-// Success appears as green
+/* Success appears as green */
 .btn-success {
   .btn-pseudo-states(@btn-success-color, @btn-success-bg, @btn-success-border);
 }
-// Info appears as blue-green
+/* Info appears as blue-green */
 .btn-info {
   .btn-pseudo-states(@btn-info-color, @btn-info-bg, @btn-info-border);
 }
 
 
-// Jade appears as green-blue
+/* Jade appears as green-blue */
 .btn-jade {
   .btn-pseudo-states(@btn-jade-color, @btn-jade-bg, @btn-jade-border);
 }
-// Inverse appears as white
+/* Inverse appears as white */
 .btn-inverse {
   .btn-inverse-pseudo-states(@btn-inverse-color, @btn-inverse-bg, @btn-inverse-border);
 }
 
 
-// Link buttons
-// -------------------------
+/* Link buttons */
+/* ------------------------- */
 
-// Make a button look and behave like a link
+/* Make a button look and behave like a link */
 .btn-link,
 .btn-link:active,
 .btn-link[disabled],
@@ -183,8 +183,8 @@ fieldset[disabled] .btn-link {
 }
 
 
-// Button Sizes
-// --------------------------------------------------
+/* Button Sizes */
+/* -------------------------------------------------- */
 
 .btn-jumbo {
   padding: (@padding-large-vertical * 1.9) (@padding-large-horizontal * 3);
@@ -199,20 +199,20 @@ fieldset[disabled] .btn-link {
 .btn-small {
   padding: @padding-small-vertical @padding-large-horizontal;
   font-size: @font-size-small;
-  line-height: 1.5; // ensure proper height of button next to small input
+  line-height: 1.5; /* ensure proper height of button next to small input */
 }
 .btn-mini {
   padding: (@padding-small-vertical - 2px) (@padding-large-horizontal - 2px);
   font-size: (@font-size-small - 1);
-  line-height: 1; // ensure proper height of button next to small input
+  line-height: 1; /* ensure proper height of button next to small input */
 }
 
 
 
-// Button Sizes
-// --------------------------------------------------
+/* Button Sizes */
+/* -------------------------------------------------- */
 
-// Large button
+/* Large button */
 .button-large {
   width: 100%;
   font-family: "Open Sans", @font-family-sans-serif;
@@ -223,13 +223,13 @@ fieldset[disabled] .btn-link {
   border-radius: 40px;
 }
 
-// Small button
+/* Small button */
 .button-small {
   padding: 9px 25px;
   font-size: 12px;
 }
 
-// Mini button
+/* Mini button */
 .button-mini {
   padding: 6px 20px;
   font-size: 10px;
@@ -237,8 +237,8 @@ fieldset[disabled] .btn-link {
 
 
 
-// Block button
-// --------------------------------------------------
+/* Block button */
+/* -------------------------------------------------- */
 
 .btn-block {
   display: block;
@@ -247,12 +247,12 @@ fieldset[disabled] .btn-link {
   padding-right: 0;
 }
 
-// Vertically space out multiple block buttons
+/* Vertically space out multiple block buttons */
 .btn-block + .btn-block {
   margin-top: 5px;
 }
 
-// Specificity overrides
+/* Specificity overrides */
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -261,7 +261,7 @@ input[type="button"] {
   }
 }
 
-// Centered button
+/* Centered button */
 .button-centered {
   position: absolute;
   top: 50%;
@@ -271,8 +271,8 @@ input[type="button"] {
 
 
 
-// Alternate styles
-// --------------------------------------------------
+/* Alternate styles */
+/* -------------------------------------------------- */
 
 
 .button-jade {
@@ -285,7 +285,7 @@ input[type="button"] {
   }
 }
 
-// Cool gray
+/* Cool gray */
 .button-coolgray {
   color: #fff;
   background-color: #3f4546;
@@ -311,8 +311,8 @@ input[type="button"] {
 
 
 
-// Buttons
-// --------------------------------
+/* Buttons */
+/* -------------------------------- */
 
 .btn-facebook {
   display: block;

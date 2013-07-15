@@ -2,31 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{{title}} | Upstage Component</title>
-    <link rel="stylesheet" href="{{assets}}/assemble.css">
-    <link rel="stylesheet" href="{{assets}}/sections.css">
-    <link rel="stylesheet" href="{{assets}}/github.css">
+    <title>{{ title }} | Upstage Component</title>
+    <link rel="stylesheet" href="{{assets}}/upstage.css">
+    <link rel="stylesheet" href="{{assets}}/{{pkg.name}}.css">
     <link rel="stylesheet" href="{{assets}}/docs.css">
   </head>
   <body>
 
     {{! Navbar
     ================================================== }}
-    {{> navbar }}
-
-
-    {{! Subhead
-    ================================================== }}
-    <div class="masthead subhead">
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-12">
-            <h1> {{ title }} </h1>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="navbar-brand" href="{{relative this.dest "index.html"}}">UPSTAGE</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="brand-subtitle">Component</li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <li> <a href="https://github.com/upstage/{{pkg.name}}/">GitHub Repo</a> </li>
+              <li> <a href="https://github.com/upstage/{{pkg.name}}/issues">Issues</a> </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
 
     {{! Page content
     ================================================== }}

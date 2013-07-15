@@ -8,8 +8,26 @@ body {
 .btn {
   margin: 10px 3px;
 }
-
-
+.page-header {
+  border: none;
+}
+.subhead h1,
+.page-header h1 {
+  text-align: center;
+  display: inline-block;
+}
+.page-header iframe {
+  margin-left: -15px;
+}
+.page-header iframe:first-of-type {
+  margin-left: 30px;
+}
+.subhead {
+  text-align: center;
+}
+.subhead ~ .subhead {
+  margin: 0;
+}
 /*
  * Bootstrap Overrides
  */

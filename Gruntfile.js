@@ -8,6 +8,7 @@
 'use strict';
 
 module.exports = function(grunt) {
+  grunt.util._.mixin(require('./src/helpers/mixins.js').init(grunt));
 
   // Project configuration.
   grunt.initConfig({
@@ -18,9 +19,13 @@ module.exports = function(grunt) {
         options: {
           flatten: true,
           assets: 'assets',
+          helpers: ['./src/helpers/helpers.js'],
           layout: 'src/templates/layouts/default.hbs',
-          partials: ['src/templates/partials/*.hbs'],
-          data: ['src/data/*.{json,yml}']
+          partials: ['src/templates/partials/**/*.hbs'],
+          data: ['src/data/*.{json,yml}'],
+
+          // Pass metadata from package.json into templates
+          pkg: '<%= pkg %>'
         },
         src: ['src/templates/pages/*.hbs'],
         dest: './'
@@ -28,10 +33,15 @@ module.exports = function(grunt) {
     },
 
     less: {
-      options: {paths: 'src/less'},
+      options: {
+        paths: ['src/less', 'src/less/components'],
+        imports: {
+          reference: ['src/less/variables.less', 'src/less/mixins.less']
+        }
+      },
       component: {
-        src:  'src/less/<%= pkg.name %>.less',
-        dest: 'assets/<%= pkg.name %>.css'
+        src:  'src/less/components/*.less',
+        dest: 'assets/components.css'
       }
     },
 

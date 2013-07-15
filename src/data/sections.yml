@@ -1,0 +1,47 @@
+white:
+  modifier: section-white
+  text:
+    one: <%= lorem.one %>
+    two: <%= lorem.two %>
+    three: <%= lorem.three %>
+
+blue:
+  modifier: section-blue
+  holderbg: <%= palette.brand.blue %>
+  text:
+    one: <%= lorem.one %>
+    two: <%= lorem.two %>
+    three: <%= lorem.three %>
+
+aqua:
+  modifier: section-aqua
+  holderbg: <%= palette.brand.aqua %>
+  text:
+    one: <%= lorem.one %>
+    two: <%= lorem.two %>
+    three: <%= lorem.three %>
+
+slate:
+  modifier: section-slate
+  holderbg: <%= palette.brand.slate %>
+  text:
+    one: <%= lorem.one %>
+    two: <%= lorem.two %>
+    three: <%= lorem.three %>
+
+violet:
+  modifier: section-violet
+  holderbg: <%= palette.brand.violet %>
+  text:
+    one: <%= lorem.one %>
+    two: <%= lorem.two %>
+    three: <%= lorem.three %>
+
+gray:
+  modifier: section-gray
+  holderbg: <%= palette.brand.gray %>
+  text:
+    one: <%= lorem.one %>
+    two: <%= lorem.two %>
+    three: <%= lorem.three %>
+

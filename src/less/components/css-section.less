@@ -1,0 +1,95 @@
+/*!
+/* CSS Section
+/* ----------------------------------------- */
+
+
+
+/* Base Palette */
+@section-bg-color: #fff;
+
+/* Base Typography */
+@font-family-base:     'Helvetica Neue', Helvetica, Arial, sans-serif;;
+@font-family-headings: "Open Sans", @font-family-base;
+
+/* Spacing */
+@section-padding-vertical:   50px;
+@section-padding-horizontal: 70px;
+
+.section {
+  font-family: @font-family-headings;
+  padding: @section-padding-vertical 0 (@section-padding-vertical - 10px);
+  background-color: @section-bg-color;
+  text-shadow: none;
+
+  /* Add vertical spacing to Bootstrap grid columns */
+  .col {
+    padding: 0 @section-padding-horizontal;
+  }
+
+  /* Headigns */
+  h2, h3 {
+    color: #222;
+    padding: 15px 0 5px 0;
+    margin: 0;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+
+  /* Paragraph and button styles. */
+  /* ------------------------------------------- */
+
+  /* We use .label instead of .btn since less code is required for customizations. */
+  p, .label {
+    color: #222;
+    font-family: @font-family-base;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .label {
+    padding: 0 12px;
+    font-size: 11px;
+    font-weight: 300;
+    text-shadow: none;
+    text-transform: uppercase;
+    background: darken(#fff, 10%);
+    &:hover {
+      color: #fff;
+      background: rgba(0,0,0,.35);
+    }
+  }
+}
+
+.section(@bg: #30beda, @color: #fff) {
+  background-color: @bg;
+  h1, h2, h3 {
+    color: @color;
+  }
+  p, .label, .label:hover {
+    color: lighten(@bg, 35%);
+  }
+  .label {
+    background: darken(@bg, 10%);
+    &:hover {
+      background: rgba(0,0,0,.35);
+    }
+  }
+}
+.section-aqua {
+  .section(#30beda);
+}
+.section-blue {
+  .section(#008fd5);
+}
+.section-slate {
+  .section(#4b5c66);
+}
+.section-violet {
+  .section(#5a62d2);
+}
+.section-gray {
+  .section(#89949b);
+}

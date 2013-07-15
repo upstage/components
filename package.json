@@ -1,23 +1,23 @@
 {
-  "name": "css-button",
-  "description": "CSS component, from the Upstage component library.",
+  "name": "components",
+  "description": "Upstage component library.",
   "version": "0.1.0",
-  "homepage": "https://github.com/upstage/css-button",
+  "homepage": "https://github.com/upstage/components",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/assemble/css-button.git"
+    "url": "https://github.com/assemble/components.git"
   },
   "bugs": {
-    "url": "https://github.com/upstage/css-button/issues"
+    "url": "https://github.com/upstage/components/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/upstage/css-button/blob/master/LICENSE-MIT"
+      "url": "https://github.com/upstage/components/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -32,10 +32,17 @@
     "grunt-prettify": "~0.1.5"
   },
   "keywords": [
-    "CSS",
-    "CSS sections",
+    "component",
+    "components",
+    "less css",
     "CSS component",
+    "CSS components",
+    "CSS framework",
+    "CSS sections",
+    "CSS",
     "UI component",
+    "UI components",
+    "UI framework",
     "user interface component"
   ]
 }
