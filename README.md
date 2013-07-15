@@ -2,7 +2,7 @@
 
 > CSS buttons component. From the [Upstage component library][components].
 
-### [See examples â†’](http://upstage.github.io/css-buttons/)
+### [See examples →](http://upstage.github.io/css-buttons/)
 
 
 ## TODO

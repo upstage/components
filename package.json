@@ -32,6 +32,8 @@
     "grunt-prettify": "~0.1.5"
   },
   "keywords": [
+    "buttons",
+    "css buttons",
     "component",
     "components",
     "less css",

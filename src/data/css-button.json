@@ -1,41 +1,51 @@
 {
+  "danger": {
+    "text": "Base Button",
+    "url": "#",
+    "modifier": "btn-danger"
+  },
   "primary": {
-    "text": "Button",
+    "text": "Base Button",
     "url": "#",
     "modifier": "btn-primary"
   },
   "jade": {
-    "text": "Button",
+    "text": "Base Button",
     "url": "#",
     "modifier": "btn-jade"
   },
   "info": {
-    "text": "Button",
+    "text": "Base Button",
     "url": "#",
     "modifier": "btn-info"
   },
   "success": {
-    "text": "Button",
+    "text": "Base Button",
     "url": "#",
     "modifier": "btn-success"
   },
   "warning": {
-    "text": "Button",
+    "text": "Base Button",
     "url": "#",
     "modifier": "btn-warning"
   },
-  "danger": {
-    "text": "Button",
-    "url": "#",
-    "modifier": "btn-danger"
-  },
   "inverse": {
-    "text": "Button",
+    "text": "Base Button",
     "url": "#",
     "modifier": "btn-inverse"
   },
+  "default": {
+    "text": "Base Button",
+    "url": "#",
+    "modifier": "btn-default"
+  },
 
 
+  "danger-small": {
+    "text": "Small Button",
+    "url": "#",
+    "modifier": "btn-danger btn-small"
+  },
   "primary-small": {
     "text": "Small Button",
     "url": "#",
@@ -61,18 +71,23 @@
     "url": "#",
     "modifier": "btn-warning btn-small"
   },
-  "danger-small": {
-    "text": "Small Button",
-    "url": "#",
-    "modifier": "btn-danger btn-small"
-  },
   "inverse-small": {
     "text": "Small Button",
     "url": "#",
     "modifier": "btn-inverse btn-small"
   },
+  "default-small": {
+    "text": "Small Button",
+    "url": "#",
+    "modifier": "btn-default btn-small"
+  },
 
 
+  "danger-large": {
+    "text": "Large Button",
+    "url": "#",
+    "modifier": "btn-danger btn-large"
+  },
   "primary-large": {
     "text": "Large Button",
     "url": "#",
@@ -98,18 +113,23 @@
     "url": "#",
     "modifier": "btn-warning btn-large"
   },
-  "danger-large": {
-    "text": "Large Button",
-    "url": "#",
-    "modifier": "btn-danger btn-large"
-  },
   "inverse-large": {
     "text": "Large Button",
     "url": "#",
     "modifier": "btn-inverse btn-large"
   },
+  "default-large": {
+    "text": "Large Button",
+    "url": "#",
+    "modifier": "btn-default btn-large"
+  },
 
 
+  "danger-jumbo": {
+    "text": "Jumbo Button",
+    "url": "#",
+    "modifier": "btn-danger btn-jumbo"
+  },
   "primary-jumbo": {
     "text": "Jumbo Button",
     "url": "#",
@@ -135,14 +155,14 @@
     "url": "#",
     "modifier": "btn-warning btn-jumbo"
   },
-  "danger-jumbo": {
-    "text": "Jumbo Button",
-    "url": "#",
-    "modifier": "btn-danger btn-jumbo"
-  },
   "inverse-jumbo": {
     "text": "Jumbo Button",
     "url": "#",
     "modifier": "btn-inverse btn-jumbo"
+  },
+  "default-jumbo": {
+    "text": "Jumbo Button",
+    "url": "#",
+    "modifier": "btn-default btn-jumbo"
   }
 }
