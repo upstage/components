@@ -1,11 +1,36 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 /*
+ * Project-specific overrides
+ */
+body {
+  background: #fff;
+}
+.btn {
+  margin: 10px 3px;
+}
+.page-header {
+  border: none;
+}
+.subhead h1,
+.page-header h1 {
+  text-align: center;
+  display: inline-block;
+}
+.page-header iframe {
+  margin-left: -15px;
+}
+.page-header iframe:first-of-type {
+  margin-left: 30px;
+}
+.subhead {
+  text-align: center;
+}
+.subhead ~ .subhead {
+  margin: 0;
+}
+/*
  * Bootstrap Overrides
  */
-.container {
-  max-width: 100%;
-  padding: 0 20px;
-}
 .navbar {
   padding-left: 0;
   padding-right: 0;
